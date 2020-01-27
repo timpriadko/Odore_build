@@ -88,5 +88,24 @@ $(document).ready(function() {
   ]
   });
 
+  // Footer slider
+  $('footer .slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false,
+    appendDots: $('footer .left'),
+    responsive: [
+      {
+        breakpoint: 530,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+  ]
+  });
+
   // end document ready
 });

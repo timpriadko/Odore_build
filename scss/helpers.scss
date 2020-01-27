@@ -66,7 +66,7 @@
 
 .btn {
 	box-shadow:inset 0px 0px 0px 1px $main-black;
-	padding: 15px;
+	padding: 14px 15px;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -74,6 +74,8 @@
 	font-size: 12px;
 	letter-spacing: 1.1px;
 	text-align: center;
+	width: 100%;
+    max-width: 214px;
 	&:hover {
 		transition: .3s;
 	}
