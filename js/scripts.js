@@ -19,8 +19,8 @@ $(document).ready(function() {
   });
 
   // Slider
-  var sliderPrevArrow = '<button type="button" class="slick-prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M14.82 21.18L5.66 12L14.82 2.82L12 0L0 12L12 24L14.82 21.18Z" fill="currentColor"/> </svg></button>';
-  var sliderNextArrow = '<button type="button" class="slick-next"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M0.180002 2.82L9.34 12L0.180001 21.18L3 24L15 12L3 -1.04907e-06L0.180002 2.82Z" fill="currentColor"/> </svg></button>';
+  var sliderPrevArrow = '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="26.493" height="12.723" viewBox="0 0 26.493 12.723"><defs><style>.a{fill:none;stroke:#030707;stroke-width:2px;}</style></defs><path class="a" d="M-965.567,1592h-24l11.507,11" transform="translate(992.06 -1591)"/></svg></button>';
+  var sliderNextArrow = '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="26.493" height="12.723" viewBox="0 0 26.493 12.723"><defs><style>.a{fill:none;stroke:#030707;stroke-width:2px;}</style></defs><path class="a" d="M-989.567,1592h24l-11.507,11" transform="translate(989.567 -1591)"/></svg></button>';
 
   $('.text-blocks-slider .slider').slick({
     prevArrow: sliderPrevArrow,
@@ -30,6 +30,7 @@ $(document).ready(function() {
     appendArrows: $('.text-blocks-slider .slider-btns'),
     infinite: true,
     centerMode: true,
+    draggable: false,
     responsive: [
       {
         breakpoint: 530,
@@ -75,8 +76,6 @@ $(document).ready(function() {
     appendArrows: $('.descr-img-slider .slider-btns'),
     infinite: true,
     variableWidth: true,
-    // adaptiveHeight: true,
-    // centerMode: true,
     responsive: [
       {
         breakpoint: 530,
