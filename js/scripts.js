@@ -154,6 +154,26 @@ $(document).ready(function() {
     ]
   });
 
+  // text-slider-titled-items
+  $('.text-slider-titled-items .slider').slick({
+    prevArrow: sliderPrevArrow,
+    nextArrow: sliderNextArrow,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    appendArrows: $('.text-slider-titled-items .slider-btns'),
+    infinite: true,
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 530,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+    ]
+  });
+
 
   // end document ready
 });
