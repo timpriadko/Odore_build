@@ -560,9 +560,6 @@
     .imgs-block {
         margin-left: 3.2vw;
         max-width: 1122px;
-        .img {
-            box-shadow: -17px 2px 138px 0 rgba(0,0,0,.1);
-        }
         .main-panel {
             background-image: url(../img/admin-dashboard.png);
             width: 59vw;
@@ -575,10 +572,11 @@
             background-image: url(../img/admin-trays.png);
             margin-left: 39vw;
             transform: translateY(-7vw);
-            width: 21.2vw;
+            width: 21vw;
             height: 18.6vw;
             position: relative;
             z-index: 6;
+            box-shadow: -17px 2px 138px 0 rgba(0,0,0,.1);
         }
     }
 
@@ -646,7 +644,7 @@
     }
 }
 
-.steps-decored-section {
+.big-steps-decored-section {
     h3 {
         padding-left: 16.6vw;
         max-width: 840px;
@@ -685,6 +683,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-row-gap: 6.5vw;
+            position: relative;
+            z-index: 10;
 
             .step {
                 display: flex;
@@ -722,19 +722,56 @@
                 }
             }
         }
-
-        .big-text-block {
+    }
+    .big-text-block {
+        display: grid;
+        grid-template-columns: 1fr 1.9fr;
+        .img-left {
+            width: 100%;
+            height: 109%;
+            transform: translateY(-8%);
+            background-size: cover;
+            background-image: url(../img/laptop-accessories-table.png);
+            background-position: right;
+        }
+        .text {
+            position: relative;
+            overflow: hidden;
+            padding: 10.1vw 0 7vw 0;
             p {
-
+                padding: 0 0 0 3.1vw;
             }
             h3 {
-
+                padding: 1.6vw 0 0 8vw;
+                max-width: 840px;
+            }
+            .btn {
+                margin: 3.2vw 0 0 8vw;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                background-color: $blue_5;
+                top: 1.2vw;
+                right: -26%;
+                width: 24vw;
+                height: 24vw;
+                border-radius: 50%;
+                z-index: -1;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: 0;
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 3.8vw;
+                height: 6.3vw;
+                right: 3.5vw;
+                top: 2vw;
+                background-image: url(../img/rectangle-w5-purple.svg);
             }
         }
-        .img-left {
-            width: 12vw;
-            height: 120%;
-            background-image: url(../img/laptop-accessories-table.png);
-        }
+
     }
 }
