@@ -76,9 +76,6 @@
 	text-align: center;
 	width: 100%;
 	max-width: 214px;
-	&:hover {
-		transition: .3s;
-	}
 
 }
 .btn-white {
@@ -92,6 +89,19 @@
 .btn-black {
 	background-color: $main-black !important;
 	color: #fff !important;
+	position: relative;
+	&.active {
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: 101;
+			width: 72%;
+			height: 2px;
+			bottom: 30%;
+			left: 14%;
+			background-color: #8f8f8f;
+		}
+	}
 	// &:hover {
 	// 	color: $main-black !important;
 	// 	box-shadow:inset 0px 0px 0px 1px $main-black !important;

@@ -42,7 +42,7 @@
                     width: 3.7vw;
                     height: 5.3vw;
                     z-index: 2;
-                    box-shadow: -30px 30px 50px #00000022;
+                    box-shadow: -47px 30px 100px rgba(0,0,0,.15);
                 }
                 .side-decor {
                     position: absolute;
@@ -163,7 +163,7 @@
         width: 4.2vw;
         height: 7.3vw;
         z-index: 2;
-        box-shadow: -30px 30px 50px #00000022;;
+        box-shadow: -47px 30px 100px rgba(0,0,0,.15);;
     }
 
     .icon-items-center-section {
@@ -266,18 +266,17 @@
     &:before {
         content: "";
         position: absolute;
-        background-color: #e6b4d7;
+        background-color: $pink_4;
         top: 2.3vw;
         left: 0;
         width: 6.2vw;
         height: 13.5vw;
         z-index: 2;
-        opacity: .3;
     }
     &:after {
         content: "";
         position: absolute;
-        z-index: 1;
+        z-index: 3;
         background-repeat: no-repeat;
         background-size: contain;
         width: 5.8vw;
@@ -312,7 +311,7 @@
                 width: 4vw;
                 height: 6vw;
                 z-index: -1;
-                box-shadow: -30px 30px 50px #00000022;;
+                box-shadow: -47px 30px 100px rgba(0,0,0,.15);;
             }
 
             .text-block {
@@ -384,10 +383,10 @@
                 .bot-block {
                     .img {
                         position: absolute;
-                        left: -3vw;
-                        bottom: -5vw;
+                        left: -2vw;
+                        bottom: -10.2vw;
                         top: unset;
-                        width: 31.8vw;
+                        width: 33.8vw;
                         height: 27vw;
                         background-size: contain;
                         z-index: 3;
@@ -425,7 +424,7 @@
                         width: 3.1vw;
                         height: 5vw;
                         z-index: 1;
-                        box-shadow: -30px 30px 50px #00000022;;      
+                        box-shadow: -47px 30px 100px rgba(0,0,0,.15);;      
                     }
                     .dots-decor {
                         position: absolute;
@@ -471,12 +470,15 @@
             padding: 0 4vw 0 0;
             margin: 60px 1vw 0 0;
             position: relative;
+            display: grid;
+            grid-template-rows: 0.5fr 1fr;
             h4 {
                 font-size: 24px;
                 font-weight: normal;
             }
             p {
                 margin: 2vw 0 0 0;
+                color: $main-black;
             }
         }
     }
@@ -500,7 +502,7 @@
             width: 5vw;
             height: 8vw;
             z-index: 2;
-            box-shadow: -30px 30px 50px #00000022;
+            box-shadow: -47px 30px 100px rgba(0,0,0,.15);
         }
         .dots-decor {
             position: absolute;
